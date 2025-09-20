@@ -24,5 +24,8 @@ In the end, users get recommendations based on the facial features of their favo
 
 
 Future Plans:
-(future plans how to make more accessisble)
+
+1. Address the API call issues: 
+
+2. Update to suggest to users face rather than basing off celebrity: 
 
