@@ -10,6 +10,7 @@ Then, it provides the user with specified makeup products and tips similar to th
 This way, users can find products that their favorite celebs use and add them to their own routines. 
 Thus, allowing them to have a similar routine to someone they look up to! This can lead to more confidence and inspire creativity. 
 
+Frontend:
 (frontend explanation)
 
 
@@ -22,5 +23,6 @@ Then, using the OpenAI API, we take this information and curate makeup products 
 In the end, users get recommendations based on the facial features of their favorite celebrity. 
 
 
-(future plans)
+Future Plans:
+(future plans how to make more accessisble)
 
