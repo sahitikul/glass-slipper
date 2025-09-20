@@ -12,7 +12,13 @@ Thus, allowing them to have a similar routine to someone they look up to! This c
 
 (frontend explanation)
 
-(backend explanation)
+Backend
+
+We first use Amazons Rekognition API to detect the celebrity from the user input.
+Then, using this same API, it detects facial features and other basic information based off of the celebrity. 
+It gathers features such as the persons gender, age, emotions, eyes, mouth, pose, etc. 
+Then, using the OpenAI API, we take this information and curate makeup products and tips that closely match the ones the celebrity uses. 
+In the end, users get recommendations based on the facial features of their favorite celebrity. 
 
 (future plans)
 
