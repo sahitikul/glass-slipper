@@ -1,7 +1,8 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-import boto3
 import os
+import boto3
+
 
 app = FastAPI(title="GlassSlipper.ai")
 
@@ -14,6 +15,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
 
 # AWS Rekognition setup (make sure AWS credentials are in environment)
 rekognition_client = boto3.client('rekognition', region_name='us-east-2')
