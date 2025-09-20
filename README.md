@@ -1,8 +1,11 @@
 # glass-slipper
 SteelHacks Hackathon Project 2025
 
-(team information) 
+Team information:
 Emily Bartell     egb87@pitt.edu
+Raima Saha        ras709@pitt.edu
+Sahiti Kulkarni
+Lakshya Srinivasan
 
 This app allows users to upload a picture of a celebrity they look up to and would like makeup advice from. 
 Our app then takes that celebrity and detects some of there main traits including gender, age, and basic facial features.
@@ -25,7 +28,9 @@ In the end, users get recommendations based on the facial features of their favo
 
 Future Plans:
 
-1. Address the API call issues: 
+1. Address the API call issues: We will set it up so that each user have to create an account to track the usage by user. Additionally, we will incorporate a database (preferably PostgreSQL so it can scale) so we can track usage per user and it will be easier to keep track of which user has exceeded their limit and notify them when they have.
 
-2. Update to suggest to users face rather than basing off celebrity: 
+2. Update to suggest to users face rather than basing off celebrity: Include an option so that the user can upload a picture of their face so that makeup, hair, and jewelry suggestions can be tailored to the user.
+
+3. Improve depth and quality of suggestions: With more work, we could implement more prompting to have the AI suggest with more detail, particularly in regards to undertone and hue of the skin so that makeup and jewelry suggestions can be even more specific.
 
