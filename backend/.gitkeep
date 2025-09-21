@@ -1,0 +1,21 @@
+import React from 'react'
+export function App()
+{
+    return (
+        <div
+        style = {{
+        backgroundColor: "#EECFD4",
+        color: "#481C4A",
+        minHeight: "100vh",
+        width:100%,
+        padding: "50px",
+        paddingTop:"200px",
+        textAlign:"center",
+        fontFamily: "Creepster",
+        }}>
+        <div>
+        <h1>Choose an option</h1>
+        </div>
+        </div>
+    );
+}
