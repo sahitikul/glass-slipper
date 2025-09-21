@@ -1,9 +1,8 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import os
-<<<<<<< HEAD
 import boto3
-=======
+
 from dotenv import load_dotenv
 from openai import OpenAI
 
@@ -12,8 +11,6 @@ load_dotenv()  # Loads variables from .env file
 
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
->>>>>>> b380975819b8e7b1f8248289ca8da252e95ecc5b
-
 
 app = FastAPI(title="GlassSlipper.ai")
 
