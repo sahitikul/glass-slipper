@@ -14,7 +14,10 @@ This way, users can find products that their favorite celebs use and add them to
 Thus, allowing them to have a similar routine to someone they look up to! This can lead to more confidence and inspire creativity. 
 
 Frontend:
-(frontend explanation)
+
+We used HTML and CSS to layout the pages for our app. We chose a pink color pallete to match our fairy godmother theme. 
+The home page shows our logo and provides the users with a start buttom. From there, the user gets brought to an upload page.
+This page allows the user to upload an image of a celebrity of their choosing. Finally, on the last page, the user sees there makeup tips and recommended products. 
 
 
 Backend:
@@ -24,6 +27,7 @@ Then, using this same API, it detects facial features and other basic informatio
 It gathers features such as the persons gender, age, emotions, eyes, mouth, pose, etc. 
 Then, using the OpenAI API, we take this information and curate makeup products and tips that closely match the ones the celebrity uses. 
 In the end, users get recommendations based on the facial features of their favorite celebrity. 
+*Fast API was used to connect our frontend to our backend
 
 
 Future Plans:
