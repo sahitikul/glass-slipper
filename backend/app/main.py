@@ -29,9 +29,24 @@ app.add_middleware(
 # AWS Rekognition setup (make sure AWS credentials are in environment)
 rekognition_client = boto3.client('rekognition', region_name='us-east-2')
 
+
+def get_makeup_recommendations(traits):
+    prompt = f"""
+    Given the following facial traits:
+    {traits}
+    Suggest a list of makeup products (type, brand, shade) suitable for these traits.
+    """
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.7
+    )
+    return response.choices[0].message.content
+
+
         
 
-# -------- Upload image & detect celebrities --------
+# Upload image & detect celebrities 
 @app.post("/upload/demo_user")
 async def upload_image(file: UploadFile = File(...)):
     # Save uploaded file temporarily
@@ -82,18 +97,6 @@ async def upload_image(file: UploadFile = File(...)):
 
     return {"file": file.filename, "faces": results}
 
-def get_makeup_recommendations(traits):
-    prompt = f"""
-    Given the following facial traits:
-    {traits}
-    Suggest a list of makeup products (type, brand, shade) suitable for these traits.
-    """
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.7
-    )
-    return response.choices[0].message.content
 
     
 @app.get("/test-openai")
